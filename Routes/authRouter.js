@@ -5,7 +5,7 @@ const isSignedIn=require('../Middleware/isSignedIn')
 
 router.get('/sign-token', ctrl.signToken);
 router.post('/verify-token', ctrl.verifyToken)
-router.post('/sign-up', isSignedIn, ctrl.signup)
+router.post('/sign-up',ctrl.signup)
 router.post('/sign-in', ctrl.login)
 
 module.exports = router;

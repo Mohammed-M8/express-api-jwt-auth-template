@@ -9,7 +9,7 @@ const isSignedIn = (req, res, next) => {
         next()
 
     } catch (error) {
-        res.status(401).json({ err: 'Lo' })
+        res.status(401).json({ err: 'Login Invalid' })
     }
 }
 
